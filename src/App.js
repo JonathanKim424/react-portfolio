@@ -1,16 +1,24 @@
 import React from 'react';
-import About from './components/About';
 import './App.css';
+import { Footer, Blog, Possibility, Features, What, Header } from './containers';
+import { CTA, Brand, Navbar } from './components';
 
 function App() {
   return (
-    <div>
-      Hello World!
-      <main>
-        <About></About>
-      </main>
+    <div className='App'>
+      <div className='gradient__bg'>
+        <Navbar />
+        <Header />
+      </div>
+      <Brand />
+      <What />
+      <Features />
+      <Possibility />
+      <CTA />
+      <Blog />
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
