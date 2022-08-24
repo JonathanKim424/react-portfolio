@@ -7,8 +7,11 @@ const Header = () => {
     <div className='portfolio__header section__padding' id='home'>
       <div className='portfolio__header-content'>
         <div className='portfolio__header-content__title'>
+          Hi there! I'm
           <h1 className='gradient__text'>Jonathan Kim</h1>
-          <h3 className='gradient__text'>Full Stack Developer</h3>
+          <div className='portfolio__header-content__title-sub'>
+            a <span className='gradient__text'>Full Stack Developer</span>
+          </div>
         </div>
         <h2>Simplicity is the ultimate sophistication</h2>
         <h4>-Leonardo da Vinci</h4>
