@@ -1,8 +1,8 @@
-.gpt3__header {
+.portfolio__header {
     display: flex;
 }
 
-.gpt3__header-content {
+.portfolio__header-content {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -11,15 +11,54 @@
     margin-right: 5rem;
 }
 
-.gpt3__header-content h1 {
+.portfolio__header-content h2 {
+    font-family: papyrus;
+    font-weight: 500;
+    font-size: 43px;
+    line-height: 52px;
+    color: var(--color-text);
+}
+
+.portfolio__header-content h4 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: right;
+    width: 100%;
+    color: var(--color-text);
+}
+
+.portfolio__header-content__title {
+    width: 80%;
+    margin-bottom: 2rem;
+    color: var(--color-text);
+    font-size: 23px;
+}
+
+.portfolio__header-content__title h1 {
     font-family: var(--font-family);
     font-weight: 800;
     font-size: 62px;
     line-height: 75px;
-    letter-spacing: -0.04em;
+    width: 100%;
+    text-align: center;
 }
 
-.gpt3__header-content p {
+.portfolio__header-content__title-sub {
+    width: 100%;
+    color: var(--color-text);
+    text-align: right;
+}
+
+.portfolio__header-content__title-sub span {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 48px;
+}
+
+.portfolio__header-content p {
     font-family: var(--font-family);
     font-size: 20px;
     line-height: 27px;
@@ -27,39 +66,25 @@
     margin-top: 1.5rem;
 }
 
-.gpt3__header-content__input {
+.portfolio__header-content__input {
     width: 100%;
     margin: 2rem 0 1rem;
     display: flex;
 }
 
-.gpt3__header-content__input input {
-    flex: 2;
-    width: 100%;
-    min-height: 50px;
-    background: var(--color-footer);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    font-family: var(--font-family);
-    font-size: 20px;
-    line-height: 27px;
-    border: 2px solid var(--color-footer);
-    padding: 0 1rem;
-    outline: none;
-    color: #fff;
-}
-
-.gpt3__header-content__input button {
-    flex: 0.6;
+.portfolio__header-content__input a {
     width: 100%;
     min-height: 50px;
     font-family: var(--font-family);
     font-weight: bold;
     font-size: 20px;
     line-height: 27px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #FF4820;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 5px;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -67,84 +92,113 @@
     padding: 0 1rem;
 }
 
-.gpt3__header-content__people {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-.gp3__header-content__people img {
-    width: 181.79px;
-    height: 38px;
-}
-
-.gpt3__header-content__people p {
-    margin: 0 0 0 1rem;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 38px;
-    color: #fff;
-    text-align: center;
-}
-
-.gpt3__header-image {
+.portfolio__header-image {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.gpt3__header-image img {
+.portfolio__header-image img {
     width: 100%;
     height: 100%;
 }
 
 @media screen and (max-width: 1050px) {
-    .gpt3__header {
+    .portfolio__header {
         flex-direction: column;
     }
-    .gpt3__header-content {
+    .portfolio__header-content {
         margin: 0 0 3rem;
     }
 }
 
-@media screen and (max-width: 650px) {
-    .gpt3__header h1 {
+@media screen and (max-width: 900px) {
+    .portfolio__header h2 {
+        font-size: 40px;
+        line-height: 51px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .portfolio__header h1 {
         font-size: 48px;
         line-height: 60px;
     }
-    .gpt3__header p {
-        font-size: 16px;
-        line-height: 24px;
+    .portfolio__header h2 {
+        font-size: 34px;
+        line-height: 51px;
     }
-    .gpt3__header-content__people {
-        flex-direction: column;
+    .portfolio__header h3 {
+        font-size: 22px;
+        line-height: 42px;
     }
-    .gpt3__header-content__people p {
-        margin: 0;
+    .portfolio__header h4 {
+        font-size: 20px;
+        line-height: 25px;
     }
-    .gpt3__header-content__input input,
-    .gpt3__header-content__input button {
+}
+
+@media screen and (max-width: 650px) {
+    .portfolio__header-content__title {
+        width: 100%;
+    }
+    .portfolio__header h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .portfolio__header h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .portfolio__header h3 {
+        font-size: 22px;
+        line-height: 38px;
+    }
+    .portfolio__header p {
         font-size: 16px;
         line-height: 24px;
     }
 }
 
 @media screen and (max-width: 490px) {
-    .gpt3__header h1 {
-        font-size: 36px;
-        line-height: 48px;
+    .portfolio__header h1 {
+        font-size: 35px;
+        line-height: 40px;
     }
-    .gpt3__header p {
+    .portfolio__header h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .portfolio__header h3 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .portfolio__header h4 {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .portfolio__header p {
         font-size: 14px;
         line-height: 24px;
     }
-    .gpt3__header-content__input input,
-    .gpt3__header-content__input button {
-        font-size: 12px;
-        line-height: 16px;
+}
+
+@media screen and (max-width: 390px) {
+    .portfolio__header h1 {
+        font-size: 25px;
+        line-height: 34px;
+    }
+    .portfolio__header h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .portfolio__header span {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .portfolio__header h4 {
+        font-size: 14px;
+        line-height: 25px;
     }
 }
