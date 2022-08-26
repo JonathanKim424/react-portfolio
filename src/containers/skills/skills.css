@@ -1,0 +1,53 @@
+.portfolio__skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio__skills-heading {
+    width: 100%;
+    text-align: center;
+}
+
+.portfolio__skills-heading h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+}
+
+.portfolio__skills-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+}
+
+.portfolio__skills-content div {
+    width: 250px;
+    margin: 1rem;
+}
+
+.portfolio__skills-content_div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.portfolio__skills-content_div h4 {
+    font-family: var(--font-family);
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio__skills-content_div p {
+    font-family: var(--font-family);
+    font-size: 14px;
+    color: #fff;
+    margin: 0.5rem 0;
+}
