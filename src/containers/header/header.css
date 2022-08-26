@@ -129,7 +129,7 @@
         font-size: 34px;
         line-height: 51px;
     }
-    .portfolio__header h3 {
+    .portfolio__header span {
         font-size: 22px;
         line-height: 42px;
     }
@@ -151,7 +151,7 @@
         font-size: 30px;
         line-height: 40px;
     }
-    .portfolio__header h3 {
+    .portfolio__header span {
         font-size: 22px;
         line-height: 38px;
     }
@@ -162,6 +162,9 @@
 }
 
 @media screen and (max-width: 490px) {
+    .portfolio__header-content__title {
+        font-size: 16px;
+    }
     .portfolio__header h1 {
         font-size: 35px;
         line-height: 40px;
@@ -170,7 +173,7 @@
         font-size: 30px;
         line-height: 35px;
     }
-    .portfolio__header h3 {
+    .portfolio__header span {
         font-size: 18px;
         line-height: 28px;
     }
