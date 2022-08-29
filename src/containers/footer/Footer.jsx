@@ -1,16 +1,47 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import './footer.css';
+import { Contact } from '../../components';
 import gpt3Logo from '../../assets/logo.svg';
 
 const Footer = () => {
+
+  const [openModal, setOpenModal] = useState(false);
+
+  // const form = useRef();
+  // const sendEmail = (event) => {
+  //   event.preventDefault();
+  //   emailjs.sendForm('portfolio_contact_form', 'contact_form', form.current, '5Bhmm9hP77hOlY6-a')
+  //     .then((result) => {
+  //       console.log(result.text);
+  //       document.getElementById('contactForm').reset();
+  //     }, (error) => {
+  //       console.log(error.text);
+  //     });
+  // };
+
   return (
-    <div className='gpt3__footer section__padding'>
+    <div className='gpt3__footer section__padding' id='contact'>
       <div className='gpt3__footer-heading'>
         <h1 className='gradient__text'>Do you want to step in to the future before others</h1>
       </div>
-      <div className='gpt3__footer-btn'>
+      <div className='gpt3__footer-btn' onClick={() => {
+        setOpenModal(true);
+        const body = document.body;
+        body.style.overflowY = 'hidden';
+      }}>
         <p>Request Early Access</p>
       </div>
+      {openModal && <Contact closeModal={setOpenModal} />}
+      {/* <form id='contactForm' ref={form} onSubmit={sendEmail}>
+        <label>Name</label>
+        <input type='text' name='user_name' />
+        <label>Email</label>
+        <input type='email' name='user_email' />
+        <label>Message</label>
+        <textarea name='message' />
+        <input type='submit' value='Send' />
+      </form> */}
       <div className='gpt3__footer-links'>
         <div className='gpt3__footer-links_logo'>
           <img src={gpt3Logo} alt='logo' />
