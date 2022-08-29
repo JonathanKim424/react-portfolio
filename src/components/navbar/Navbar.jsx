@@ -6,8 +6,8 @@ import logo from '../../assets/jk-logo_white1.png';
 const Menu = () => (
   <>
   <p><a href='#home'>About Me</a></p>
-  <p><a href='#home'>Skills</a></p>
-  <p><a href='#home'>Projects</a></p>
+  <p><a href='#skills'>Skills</a></p>
+  <p><a href='#projects'>Projects</a></p>
   <p><a href='#home'>Contact Me</a></p>
   </>
 )
