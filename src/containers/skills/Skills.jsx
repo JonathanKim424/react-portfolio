@@ -1,6 +1,9 @@
 import React from 'react';
 import './skills.css';
 import frontEndLogo from '../../assets/front_end-logos_transparent1.png';
+import backEndLogo from '../../assets/back_end-logo.png';
+import databaseLogo from '../../assets/database-logo.png';
+import skillsLogo from '../../assets/skills-logo.png';
 
 const Skills = () => {
     return (
@@ -17,34 +20,44 @@ const Skills = () => {
                         <p>HTML5</p>
                         <p>CSS</p>
                         <p>JavaScript</p>
-                    </div>
-                    <div className='portfolio__skills-content_div-list'>
                         <p>React</p>
                         <p>Bootstrap</p>
                         <p>Tailwind</p>
                     </div>
                 </div>
                 <div className='portfolio__skills-content_div'>
-                    <h4>Back End</h4>
-                    <p>JavaScript</p>
-                    <p>Node.js</p>
-                    <p>Express</p>
-                    <p>REST API</p>
-                    <p>GraphQL</p>
+                    <div className='portfolio__skills-content_div-logo'>
+                        <img src={backEndLogo} alt='back end logo' />
+                    </div>
+                    <div className='portfolio__skills-content_div-list'>
+                        <p>JavaScript</p>
+                        <p>Node.js</p>
+                        <p>Express</p>
+                        <p>REST API</p>
+                        <p>GraphQL</p>
+                    </div>
                 </div>
             </div>
             <div className='portfolio__skills-content'>
                 <div className='portfolio__skills-content_div'>
-                    <h4>Databases</h4>
-                    <p>MySQL</p>
-                    <p>Sequelize</p>
-                    <p>MongoDB</p>
-                    <p>Mongoose</p>
+                    <div className='portfolio__skills-content_div-logo'>
+                        <img src={databaseLogo} alt='database logo' />
+                    </div>
+                    <div className='portfolio__skills-content_div-list'>
+                        <p>MySQL</p>
+                        <p>Sequelize</p>
+                        <p>MongoDB</p>
+                        <p>Mongoose</p>
+                    </div>
                 </div>
                 <div className='portfolio__skills-content_div'>
-                    <h4>Other Skills</h4>
-                    <p>Git Version Control</p>
-                    <p>Heroku App Deployment</p>
+                    <div className='portfolio__skills-content_div-logo'>
+                        <img src={skillsLogo} alt='other skills logo' />
+                    </div>
+                    <div className='portfolio__skills-content_div-list'>
+                        <p>Git Version Control</p>
+                        <p>Heroku App Deployment</p>
+                    </div>
                 </div>
             </div>
         </div>
