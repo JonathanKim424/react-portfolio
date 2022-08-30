@@ -33,6 +33,12 @@ const Contact = ({ closeModal }) => {
     const form = useRef();
     const sendEmail = (event) => {
         event.preventDefault();
+
+        if (user_name == '') {
+            alert('Name must be filled out');
+            return false;
+        }
+
         localStorage.setItem('user_name', JSON.stringify(''));
         localStorage.setItem('user_email', JSON.stringify(''));
         localStorage.setItem('message', JSON.stringify(''));
