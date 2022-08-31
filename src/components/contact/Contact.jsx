@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
+import isEmail from 'validator/es/lib/isEmail';
 import './contact.css';
 import emailLogo from '../../assets/email-logo.png';
 
@@ -34,24 +35,34 @@ const Contact = ({ closeModal }) => {
     const sendEmail = (event) => {
         event.preventDefault();
 
-        if (user_name == '') {
-            alert('Name must be filled out');
+        if (user_name === '') {
+            const userName = document.getElementById("contactForm_nameValid");
+            userName.style.display = 'block';
+            return false;
+        }
+        if (!isEmail(user_email)) {
+            const userEmail = document.getElementById("contactForm_emailValid");
+            userEmail.style.display = 'block';
+            return false;
+        }
+        if (message === '') {
+            const messageValid = document.getElementById("contactForm_messageValid");
+            messageValid.style.display = 'block';
             return false;
         }
 
-        localStorage.setItem('user_name', JSON.stringify(''));
-        localStorage.setItem('user_email', JSON.stringify(''));
-        localStorage.setItem('message', JSON.stringify(''));
-        const body = document.body;
-        body.style.overflowY = '';
-        closeModal(false);
-        // emailjs.sendForm('portfolio_contact_form', 'contact_form', form.current, '5Bhmm9hP77hOlY6-a')
-        //   .then((result) => {
-        //     console.log(result.text);
-        //     closeModal(false);
-        //   }, (error) => {
-        //     console.log(error.text);
-        //   });
+        emailjs.sendForm('portfolio_contact_form', 'contact_form', form.current, '5Bhmm9hP77hOlY6-a')
+        .then((result) => {
+            alert('Message sent!');
+            localStorage.setItem('user_name', JSON.stringify(''));
+            localStorage.setItem('user_email', JSON.stringify(''));
+            localStorage.setItem('message', JSON.stringify(''));
+            const body = document.body;
+            body.style.overflowY = '';
+            closeModal(false);
+          }, (error) => {
+            alert(error.text);
+          });
       };
     
     return (
@@ -72,9 +83,18 @@ const Contact = ({ closeModal }) => {
                 </div>
                 <div className='modalContainer-form'>
                     <form id='contactForm' ref={form} onSubmit={sendEmail}>
-                        <input type='text' name='user_name' value={user_name} onChange={(e) => setUserName(e.target.value)} placeholder='Your name' className='modalContainer-form-input' />
-                        <input type='email' name='user_email' value={user_email} onChange={(e) => setUserEmail(e.target.value)} placeholder="What's your email?" className='modalContainer-form-input' />
-                        <textarea name='message' value={message} onChange={(e) => setMessage(e.target.value)} placeholder='How can I help you?' className='modalContainer-form-ta' />
+                        <div className='contactForm_input'>
+                            <input type='text' name='user_name' value={user_name} onChange={(e) => setUserName(e.target.value)} placeholder='Your name' className='modalContainer-form-input' />
+                            <p id='contactForm_nameValid'>You must provide a name</p>
+                        </div>
+                        <div className='contactForm_input'>
+                            <input type='email' name='user_email' value={user_email} onChange={(e) => setUserEmail(e.target.value)} placeholder="What's your email?" className='modalContainer-form-input' />
+                            <p id='contactForm_emailValid'>You must provide a valid email address</p>
+                        </div>
+                        <div className='contactForm_message'>
+                            <textarea name='message' value={message} onChange={(e) => setMessage(e.target.value)} placeholder='How can I help you?' className='modalContainer-form-ta' />
+                            <p id='contactForm_messageValid'>Can't send an empty message!</p>
+                        </div>
                         <button type='submit' className='modalContainer-form-btn'>
                             <p className='modalContainer-form-btn-p gradient__text'>Send</p>
                         </button>
