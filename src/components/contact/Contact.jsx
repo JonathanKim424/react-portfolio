@@ -34,20 +34,33 @@ const Contact = ({ closeModal }) => {
     const form = useRef();
     const sendEmail = (event) => {
         event.preventDefault();
-
+        
+        let contactCheck = 0;
         if (user_name === '') {
             const userName = document.getElementById("contactForm_nameValid");
             userName.style.display = 'block';
-            return false;
+            contactCheck = 1;
+        } else {
+            const userName = document.getElementById("contactForm_nameValid");
+            userName.style.display = 'none';
         }
         if (!isEmail(user_email)) {
             const userEmail = document.getElementById("contactForm_emailValid");
             userEmail.style.display = 'block';
-            return false;
+            contactCheck = 1;
+        } else {
+            const userEmail = document.getElementById("contactForm_emailValid");
+            userEmail.style.display = 'none';
         }
         if (message === '') {
             const messageValid = document.getElementById("contactForm_messageValid");
             messageValid.style.display = 'block';
+            contactCheck = 1;
+        } else {
+            const messageValid = document.getElementById("contactForm_messageValid");
+            messageValid.style.display = 'none';
+        }
+        if (contactCheck === 1) {
             return false;
         }
 
