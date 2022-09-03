@@ -43,12 +43,12 @@
 
 .portfolio__footer-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    text-align: left;
+    padding: 0 5rem;
 }
 
 .portfolio__footer-links div {
@@ -56,45 +56,24 @@
     margin: 1rem;
 }
 
-.portfolio__footer-links_logo {
-    display: flex;
-    flex-direction: column;
-}
-
-.portfolio__footer-links_logo img {
-    width: 118px;
-    height: 30px;
-    margin-bottom: 1rem;
-}
-
-.portfolio__footer-links_logo p {
-    font-family: var(--font-family);
-    font-size: 12px;
-    line-height: 14px;
-    color: #fff;
-}
-
 .portfolio__footer-links_div {
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
+}
+
+.portfolio__footer-links_div-logo {
+    color: #fff;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
 }
 
 .portfolio__footer-links_div h4 {
     font-family: var(--font-family);
-    font-size: 14px;
+    font-size: 15px;
     line-height: 16px;
     color: #fff;
     margin-bottom: 1rem;
-}
-
-.portfolio__footer-links_div p {
-    font-family: var(--font-family);
-    font-size: 12px;
-    line-height: 14px;
-    color: #fff;
-    margin: 0.5rem 0;
-    cursor: pointer;
 }
 
 .portfolio__footer-copyright {
@@ -125,9 +104,13 @@
     .portfolio__footer-links div {
         margin: 1rem 0;
     }
-    .portfolio__footer-btn p {
-        font-size: 14px;
-        line-height: 20px;
+    .portfolio__footer-links_div-logo {
+        width: 3rem;
+        height: 3rem;
+    }
+    .portfolio__footer-links_div h4 {
+        font-size: 13px;
+        line-height: 16px;
     }
 }
 
