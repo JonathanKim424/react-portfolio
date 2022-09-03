@@ -12,7 +12,9 @@ const Project = ({ project }) => {
       <div className='portfolio__projects-container_project-content'>
         <div>
           <p>{project.tags}</p>
-          <h3>{project.title}</h3>
+          <a href={project.website} target='_blank' rel='noopener noreferrer'>
+            <h3>{project.title}</h3>
+          </a>
         </div>
         <p><a href={project.gitHubUrl} target='_blank' rel='noopener noreferrer'>GitHub Repository</a></p>
       </div>
