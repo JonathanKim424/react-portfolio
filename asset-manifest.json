@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.11b7abe7.css",
+    "main.js": "/react-portfolio/static/js/main.9dcf1707.js",
+    "static/media/ai.png": "/react-portfolio/static/media/ai.aa60586ba1ba53762d94.png",
+    "static/media/project2.png": "/react-portfolio/static/media/project2.22b221d3397a733c0776.png",
+    "static/media/project1.png": "/react-portfolio/static/media/project1.347601fb3b2bdcd4650e.png",
+    "static/media/project3.png": "/react-portfolio/static/media/project3.34df0b32d3166767fd06.png",
+    "service-worker.js": "/react-portfolio/service-worker.js",
+    "static/media/project4.png": "/react-portfolio/static/media/project4.dc2ca6b0326b1f4541e9.png",
+    "static/media/database-logo.png": "/react-portfolio/static/media/database-logo.5c480c7d217b3eceb816.png",
+    "static/media/jk-logo_white1.png": "/react-portfolio/static/media/jk-logo_white1.afefa0e5253eef3790c2.png",
+    "static/media/project5.png": "/react-portfolio/static/media/project5.ba027fb7af7b6d386afe.png",
+    "static/media/back_end-logo.png": "/react-portfolio/static/media/back_end-logo.51e4770843796ba55109.png",
+    "static/media/skills-logo.png": "/react-portfolio/static/media/skills-logo.5a233c8c3006d59e0757.png",
+    "static/media/email-logo.png": "/react-portfolio/static/media/email-logo.f2d90e4662092ffb7895.png",
+    "static/media/front_end-logos_transparent1.png": "/react-portfolio/static/media/front_end-logos_transparent1.e9ddd420077735ab70c5.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.11b7abe7.css.map": "/react-portfolio/static/css/main.11b7abe7.css.map",
+    "main.9dcf1707.js.map": "/react-portfolio/static/js/main.9dcf1707.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11b7abe7.css",
+    "static/js/main.9dcf1707.js"
+  ]
+}
