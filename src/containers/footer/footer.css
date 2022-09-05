@@ -82,6 +82,18 @@
     width: 100%;
 }
 
+.portfolio__footer-copyright h4 {
+    font-family: var(--font-family);
+    font-size: 14px;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.portfolio__footer-copyright a {
+    font-weight: 800;
+    color: #1d85f2;
+}
+
 .portfolio__footer-copyright p {
     font-family: var(--font-family);
     font-size: 12px;

@@ -53,6 +53,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='portfolio__footer-copyright'>
+        <h4>Looking for the code? Find the GitHub Repo <a href='https://github.com/JonathanKim424/react-portfolio' target='__blank' rel='noopener noreferrer'>here</a>!</h4>
         <p>© 2022 Jonathan Kim. All rights reserved.</p>
       </div>
     </div>
