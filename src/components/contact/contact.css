@@ -122,6 +122,7 @@
 .modalContainer-form-btn {
     border-radius: 16px;
     background-color: var(--color-blog);
+    cursor: pointer;
 }
 
 .modalContainer-form-btn-p {
