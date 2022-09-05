@@ -85,6 +85,7 @@
     font-size: 15px;
     padding: 0.2rem 0.5rem;
     border-radius: 7px;
+    resize: none;
 }
 
 .contactForm_input {
