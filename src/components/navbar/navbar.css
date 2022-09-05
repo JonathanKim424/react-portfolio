@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 6rem;
+    padding: 0 6rem;
+    background-color: #082D63;
+    height: 4rem;
 }
 
 .portfolio__navbar-links {
@@ -17,8 +19,8 @@
 }
 
 .portfolio__navbar-links_logo img {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
 }
 
 .portfolio__navbar-links_container {
@@ -35,7 +37,13 @@
     line-height: 25px;
     text-transform: capitalize;
     margin: 0 1rem;
-    cursor: pointer;
+}
+
+.portfolio__navbar-links_container p:hover {
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 0.4rem 0.7rem;
+    border-radius: 12px;
 }
 
 .portfolio__navbar-menu {
