@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.css';
-import ai from '../../assets/ai.png';
+import profile from '../../assets/profile.png';
 
 const Header = () => {
   return (
@@ -21,7 +21,7 @@ const Header = () => {
         </div>
       </div>
       <div className='portfolio__header-image'>
-        <img src={ai} alt='ai' />
+        <img src={profile} alt='profile' />
       </div>
     </div>
   )
