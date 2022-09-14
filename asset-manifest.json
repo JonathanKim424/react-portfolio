@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.11b7abe7.css",
-    "main.js": "/react-portfolio/static/js/main.71ea216b.js",
-    "static/media/ai.png": "/react-portfolio/static/media/ai.aa60586ba1ba53762d94.png",
+    "main.css": "/react-portfolio/static/css/main.4f1a0a73.css",
+    "main.js": "/react-portfolio/static/js/main.c73d5fba.js",
     "static/media/project2.png": "/react-portfolio/static/media/project2.22b221d3397a733c0776.png",
     "static/media/project1.png": "/react-portfolio/static/media/project1.347601fb3b2bdcd4650e.png",
     "static/media/project3.png": "/react-portfolio/static/media/project3.34df0b32d3166767fd06.png",
+    "static/media/profile.png": "/react-portfolio/static/media/profile.121543a2f0085ff80240.png",
     "service-worker.js": "/react-portfolio/service-worker.js",
     "static/media/project4.png": "/react-portfolio/static/media/project4.dc2ca6b0326b1f4541e9.png",
     "static/media/database-logo.png": "/react-portfolio/static/media/database-logo.5c480c7d217b3eceb816.png",
@@ -16,11 +16,11 @@
     "static/media/email-logo.png": "/react-portfolio/static/media/email-logo.f2d90e4662092ffb7895.png",
     "static/media/front_end-logos_transparent1.png": "/react-portfolio/static/media/front_end-logos_transparent1.e9ddd420077735ab70c5.png",
     "index.html": "/react-portfolio/index.html",
-    "main.11b7abe7.css.map": "/react-portfolio/static/css/main.11b7abe7.css.map",
-    "main.71ea216b.js.map": "/react-portfolio/static/js/main.71ea216b.js.map"
+    "main.4f1a0a73.css.map": "/react-portfolio/static/css/main.4f1a0a73.css.map",
+    "main.c73d5fba.js.map": "/react-portfolio/static/js/main.c73d5fba.js.map"
   },
   "entrypoints": [
-    "static/css/main.11b7abe7.css",
-    "static/js/main.71ea216b.js"
+    "static/css/main.4f1a0a73.css",
+    "static/js/main.c73d5fba.js"
   ]
 }
