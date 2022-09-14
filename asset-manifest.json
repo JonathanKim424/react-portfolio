@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.4f1a0a73.css",
-    "main.js": "/react-portfolio/static/js/main.c73d5fba.js",
-    "static/media/project2.png": "/react-portfolio/static/media/project2.22b221d3397a733c0776.png",
-    "static/media/project1.png": "/react-portfolio/static/media/project1.347601fb3b2bdcd4650e.png",
-    "static/media/project3.png": "/react-portfolio/static/media/project3.34df0b32d3166767fd06.png",
+    "main.js": "/react-portfolio/static/js/main.cde12013.js",
     "static/media/profile.png": "/react-portfolio/static/media/profile.121543a2f0085ff80240.png",
+    "static/media/project1.png": "/react-portfolio/static/media/project1.59cd122825cf4e27af2e.png",
+    "static/media/project3.png": "/react-portfolio/static/media/project3.9eb252775f05a49d2d6e.png",
+    "static/media/project2.png": "/react-portfolio/static/media/project2.752053f9679253bc434f.png",
     "service-worker.js": "/react-portfolio/service-worker.js",
     "static/media/project4.png": "/react-portfolio/static/media/project4.dc2ca6b0326b1f4541e9.png",
     "static/media/database-logo.png": "/react-portfolio/static/media/database-logo.5c480c7d217b3eceb816.png",
@@ -17,10 +17,10 @@
     "static/media/front_end-logos_transparent1.png": "/react-portfolio/static/media/front_end-logos_transparent1.e9ddd420077735ab70c5.png",
     "index.html": "/react-portfolio/index.html",
     "main.4f1a0a73.css.map": "/react-portfolio/static/css/main.4f1a0a73.css.map",
-    "main.c73d5fba.js.map": "/react-portfolio/static/js/main.c73d5fba.js.map"
+    "main.cde12013.js.map": "/react-portfolio/static/js/main.cde12013.js.map"
   },
   "entrypoints": [
     "static/css/main.4f1a0a73.css",
-    "static/js/main.c73d5fba.js"
+    "static/js/main.cde12013.js"
   ]
 }
