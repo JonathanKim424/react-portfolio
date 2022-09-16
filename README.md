@@ -14,7 +14,7 @@ A React portfolio that describes who I am, my resume, and various projects I hav
 The website can be found at the following address:
 https://jonathankim424.github.io/react-portfolio/
 
-![Application Screenshot](./images/application-screenshot.jpg?raw=tru "Application Screenshot")
+![Application Screenshot](./images/website-screenshot.jpg?raw=tru "Application Screenshot")
 
 ## Credits
 Made by Jonathan Kim
