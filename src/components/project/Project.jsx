@@ -14,6 +14,7 @@ const Project = ({ project }) => {
           <p>{project.tags}</p>
           <a href={project.website} target='_blank' rel='noopener noreferrer'>
             <h3>{project.title}</h3>
+            <p>{project.description}</p>
           </a>
         </div>
         <p><a href={project.gitHubUrl} target='_blank' rel='noopener noreferrer'>GitHub Repository</a></p>
