@@ -10,7 +10,7 @@ const Project = ({ project }) => {
         </a> 
       </div>
       <div className='portfolio__projects-container_project-content'>
-        <div>
+        <div className='portfolio__projects-container_project-content_main'>
           <p>{project.tags}</p>
           <a href={project.website} target='_blank' rel='noopener noreferrer'>
             <h3>{project.title}</h3>

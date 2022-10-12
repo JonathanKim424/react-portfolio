@@ -28,13 +28,17 @@
 .portfolio__projects-container_project-content p {
     font-family: var(--font-family);
     font-weight: bold;
-    font-size: 11.649px;
-    line-height: 35px;
+    font-size: 12px;
+    line-height: 30px;
     color: #fff;
 }
 
 .portfolio__projects-container_project-content p:last-child {
     cursor: pointer;
+}
+
+.portfolio__projects-container_project-content_main {
+    margin-bottom: 1.5rem;
 }
 
 .portfolio__projects-container_project-content h3 {
@@ -43,7 +47,6 @@
     font-size: 25.11px;
     line-height: 30px;
     color: #fff;
-    margin-bottom: 1.5rem;
     cursor: pointer;
 }
 
